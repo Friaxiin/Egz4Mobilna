@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Egz4Mobilna.MainPage">
+
+    <StackLayout Margin="20">
+        <Label Text="Właściwości czcionki" FontSize="Large" FontAttributes="Bold" TextColor="White" BackgroundColor=" #558B2F" HorizontalOptions="StartAndExpand"/>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+            <Label Text="Rozmiar: " FontSize="Medium" x:Name="sizeLbl"/>
+            <Label Text="" x:Name="fontSizeLbl"/>
+        </StackLayout>
+        <Slider Maximum="40" Minimum="0" x:Name="slider" ValueChanged="ChangeFontSize" HorizontalOptions="StartAndExpand"/>
+        <Label Text="" x:Name="quote" HorizontalOptions="StartAndExpand"/>
+        <Button BackgroundColor=" #558B2F" Text=">>" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" Clicked="ChangeQuote"/>
+    </StackLayout>
+
+</ContentPage>
