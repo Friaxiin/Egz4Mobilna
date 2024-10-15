@@ -4,12 +4,12 @@
              x:Class="Egz4Mobilna.MainPage">
 
     <StackLayout Margin="20">
-        <Label Text="Właściwości czcionki" FontSize="Large" FontAttributes="Bold" TextColor="White" BackgroundColor=" #558B2F" HorizontalOptions="StartAndExpand"/>
+        <Label Text="Właściwości czcionki" FontSize="Large" FontAttributes="Bold" TextColor="White" BackgroundColor=" #558B2F" HorizontalOptions="Center"/>
         <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
             <Label Text="Rozmiar: " FontSize="Medium" x:Name="sizeLbl"/>
-            <Label Text="" x:Name="fontSizeLbl"/>
+            <Label Text="" x:Name="fontSizeLbl" FontSize="Medium"/>
         </StackLayout>
-        <Slider Maximum="40" Minimum="0" x:Name="slider" ValueChanged="ChangeFontSize" HorizontalOptions="StartAndExpand"/>
+        <Slider Maximum="40" Minimum="0" x:Name="slider" ValueChanged="ChangeFontSize"/>
         <Label Text="" x:Name="quote" HorizontalOptions="StartAndExpand"/>
         <Button BackgroundColor=" #558B2F" Text=">>" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" Clicked="ChangeQuote"/>
     </StackLayout>
